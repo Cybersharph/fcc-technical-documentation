@@ -15,7 +15,7 @@ This project is part of the **Responsive Web Design Certification** offered by [
 To view this project:
 
 1. Clone the repository:  
-   `git clone https://github.com/cybersharph/python-documentation.git`
+   `git clone https://github.com/Cybersharph/fcc-technical-documentation`
 2. Open the `index.html` file in your browser.
 3. Feel free to explore and use the code as you see fit.
 
