@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Python Documentation</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <nav id="navbar">
+            <div id="logo-container">
+                <img src="https://i.ibb.co/8jckTSn/python-logo.png" alt="Python Logo" id="python-logo" />
+            </div>
+            <header>Documentation</header>
+            <ul>
+                <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+                <li><a class="nav-link" href="#Getting_Started">Getting Started</a></li>
+                <li><a class="nav-link" href="#Data_Types">Data Types</a></li>
+                <li>
+                    <a class="nav-link" href="#Control_Structures">Control Structures</a>
+                </li>
+                <li><a class="nav-link" href="#Functions">Functions</a></li>
+                <li><a class="nav-link" href="#Data_Structures">Data Structures</a></li>
+                <li><a class="nav-link" href="#File_Handling">File Handling</a></li>
+                <li><a class="nav-link" href="#Error_Handling">Error Handling</a></li>
+                <li>
+                    <a class="nav-link" href="#Modules_and_Packages">Modules and Packages</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#OOP">Object-Oriented Programming (OOP)</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Basic_Libraries">Basic Python Libraries</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Web_Development"
+                        >Introduction to Web Development</a>
+                </li>
+                <li><a class="nav-link" href="#Best_Practices">Best Practices</a></li>
+            </ul>
+        </nav>
+        <main id="main-doc">
+            <section class="main-section" id="Introduction">
+                <header>Introduction</header>
+                <p>
+                    Python is a high-level, interpreted programming language known for its
+                    readable syntax and dynamic typing.
+                </p>
+                <p>
+                    Python is popular in various fields such as web development, data
+                    science, machine learning, and automation due to its simplicity and
+                    robust community support.
+                </p>
+                <code>print("Hello, World!")</code>
+                <p>
+                    Python's support for multiple paradigms (procedural, object-oriented,
+                    and functional programming) makes it versatile for different types of
+                    projects.
+                </p>
+            </section>
+            <section class="main-section" id="Getting_Started">
+                <header>Getting Started</header>
+                <p>
+                    To start programming in Python, download and install Python from
+                    <a href="https://www.python.org/downloads/">python.org</a>.
+                </p>
+                <p>
+                    Choose an IDE (e.g., PyCharm, VS Code, or Jupyter Notebook) for a more
+                    interactive experience.
+                </p>
+                <p>Begin with a simple "Hello, World!" program:</p>
+                <code>print("This is your first Python program!")</code>
+                <p>
+                    To run your script, use the terminal or the "Run" feature in your IDE:
+                </p>
+                <code>python yourfile.py</code>
+            </section>
+            <section class="main-section" id="Data_Types">
+                <header>Data Types</header>
+                <p>
+                    Understanding data types is essential in Python for variable
+                    management and operations:
+                </p>
+                <ul>
+                    <li>
+                        <strong>Strings:</strong> A sequence of characters.
+                        <code>str = "Hello"</code>
+                    </li>
+                    <li>
+                        <strong>Integers:</strong> Whole numbers. <code>num = 42</code>
+                    </li>
+                    <li>
+                        <strong>Lists:</strong> Ordered, mutable collections of elements.
+                        <code>list_example = [1, 2, 3]</code>
+                    </li>
+                    <li>
+                        <strong>Dictionaries:</strong> Key-value pairs for mapping
+                        relationships. <code>dict_example = {"key": "value"}</code>
+                    </li>
+                    <li>
+                        <strong>Booleans:</strong> Logical values. <code>flag = True</code>
+                    </li>
+                </ul>
+                <p>
+                    Each data type has specific methods to interact with and modify the
+                    data.
+                </p>
+            </section>
+            <section class="main-section" id="Control_Structures">
+                <header>Control Structures</header>
+                <p>Control structures guide the execution flow of your program:</p>
+                <h3>Conditional Statements</h3>
+                <p>Conditional statements execute code based on certain conditions:</p>
+                <code>
+                if x > 10: print("x is greater than 10") elif x == 10: print("x is
+                equal to 10") else: print("x is less than 10")
+                </code>
+                <h3>Loops</h3>
+                <p>
+                    Use <code>for</code> and <code>while</code> loops to repeat actions:
+                </p>
+                <code>
+                for i in range(5): print(i) n = 0 while n < 5: print(n) n += 1
+                </code>
+                <p>
+                    <strong>Note:</strong> Be cautious of infinite loops when using
+                    <code>while</code> loops.
+                </p>
+            </section>
+            <section class="main-section" id="Functions">
+                <header>Functions</header>
+                <p>
+                    Functions group reusable code blocks to perform tasks, making programs
+                    modular and readable.
+                </p>
+                <p>
+                    Define a function with <code>def</code> and use <code>return</code> to
+                    output results:
+                </p>
+                <code>
+                def greet(name): return f"Hello, {name}!" print(greet("Alice"))
+                </code>
+                <p>
+                    Lambda functions offer concise, one-line solutions for simple
+                    operations:
+                </p>
+                <code> add = lambda x, y: x + y print(add(2, 3)) </code>
+            </section>
+            <section class="main-section" id="Data_Structures">
+                <header>Data Structures</header>
+                <p>Python has versatile built-in data structures:</p>
+                <ul>
+                    <li>
+                        <strong>Lists:</strong> Mutable collections.
+                        <code>my_list = [1, 2, 3]</code>
+                    </li>
+                    <li>
+                        <strong>Tuples:</strong> Immutable collections.
+                        <code>my_tuple = (1, 2, 3)</code>
+                    </li>
+                    <li>
+                        <strong>Sets:</strong> Collections with unique elements.
+                        <code>my_set = {1, 2, 3}</code>
+                    </li>
+                    <li>
+                        <strong>Dictionaries:</strong> Key-value mappings.
+                        <code>my_dict = {"name": "Alice", "age": 25}</code>
+                    </li>
+                </ul>
+                <p>
+                    Understanding their properties helps in selecting the best data
+                    structure for specific tasks.
+                </p>
+            </section>
+            <section class="main-section" id="File_Handling">
+                <header>File Handling</header>
+                <p>
+                    Python simplifies reading and writing files using the
+                    <code>open()</code> function:
+                </p>
+                <code>
+                # Writing to a file with open("example.txt", "w") as file:
+                file.write("Hello, World!") # Reading from a file with
+                open("example.txt", "r") as file: content = file.read() print(content)
+                </code>
+                <p>
+                    <strong>Tip:</strong> Using <code>with</code> ensures files are
+                    properly closed after operations.
+                </p>
+            </section>
+            <section class="main-section" id="Error_Handling">
+                <header>Error Handling</header>
+                <p>
+                    Prevent program crashes using <code>try-except</code> blocks to catch
+                    exceptions:
+                </p>
+                <code>
+                try: result = 10 / 0 except ZeroDivisionError: print("You cannot
+                divide by zero!") finally: print("This block always runs.")
+                </code>
+                <p>
+                    The <code>finally</code> block runs whether an exception occurs or
+                    not, ideal for cleanup actions.
+                </p>
+            </section>
+            <section class="main-section" id="Modules_and_Packages">
+                <header>Modules and Packages</header>
+                <p>Modules help organize code into separate files:</p>
+                <code> import math print(math.sqrt(16)) </code>
+                <p>
+                    Extend Python's capabilities by installing packages via
+                    <code>pip</code>:
+                </p>
+                <code>pip install numpy</code>
+                <p>
+                    Organize your project into packages by using folders with an
+                    <code>__init__.py</code> file.
+                </p>
+            </section>
+            <section class="main-section" id="OOP">
+                <header>Object-Oriented Programming (OOP)</header>
+                <p>
+                    OOP structures code using classes and objects for better abstraction
+                    and reusability:
+                </p>
+                <code>
+                class Dog: def __init__(self, name): self.name = name def bark(self):
+                return f"{self.name} says woof!" dog = Dog("Buddy print(dog.bark())
+                </code>
+                <p>
+                    Classes bundle data (attributes) and methods (functions) that operate
+                    on the data, encapsulating behavior and state.
+                </p>
+                <p>
+                    OOP principles include encapsulation, inheritance, and polymorphism,
+                    which improve code reusability and structure.
+                </p>
+            </section>
+            <section class="main-section" id="Basic_Libraries">
+                <header>Basic Python Libraries</header>
+                <p>
+                    Python offers powerful libraries to streamline coding and data
+                    handling:
+                </p>
+                <ul>
+                    <li>
+                        <strong>NumPy:</strong> Used for numerical operations and handling
+                        large arrays. <code>import numpy as np</code>
+                    </li>
+                    <li>
+                        <strong>Pandas:</strong> Excellent for data manipulation and
+                        analysis. <code>import pandas as pd</code>
+                    </li>
+                    <li>
+                        <strong>Matplotlib:</strong> A plotting library for creating static,
+                        interactive, and animated visualizations.
+                        <code>import matplotlib.pyplot as plt</code>
+                    </li>
+                </ul>
+                <p>
+                    These libraries are essential for data science, analytics, and
+                    visualization tasks.
+                </p>
+            </section>
+            <section class="main-section" id="Web_Development">
+                <header>Introduction to Web Development</header>
+                <p>
+                    Python is popular for web development, with frameworks like Flask and
+                    Django providing tools for creating web applications:
+                </p>
+                <p>Example of a basic web server using Flask:</p>
+                <code>
+                from flask import Flask app = Flask(__name__) @app.route("/") def
+                home(): return "Hello, Flask!" if __name__ == "__main__":
+                app.run(debug=True)
+                </code>
+                <p>
+                    For larger projects, consider using Django, which offers a more
+                    feature-rich and scalable framework.
+                </p>
+            </section>
+            <section class="main-section" id="Best_Practices">
+                <header>Best Practices</header>
+                <p>
+                    Adhering to coding best practices ensures code quality and
+                    maintainability:
+                </p>
+                <ul>
+                    <li>
+                        <strong>Meaningful variable names:</strong> Use descriptive names
+                        that make the purpose of the variable clear.
+                    </li>
+                    <li>
+                        <strong>Follow PEP 8:</strong> Python's style guide for code
+                        consistency. Use <code>pylint</code> or <code>flake8</code> for code
+                        checks.
+                    </li>
+                    <li>
+                        <strong>Comments and documentation:</strong> Write clear comments
+                        and use docstrings (<code>"""docstring"""</code>) for functions and
+                        classes.
+                    </li>
+                    <li>
+                        <strong>Use virtual environments:</strong> Isolate project
+                        dependencies to prevent conflicts. <code>python -m venv env</code>
+                    </li>
+                </ul>
+                <p>
+                    These practices enhance readability, collaboration, and future
+                    maintainability.
+                </p>
+                <p>
+                    For more comprehensive guidelines, refer to the
+                    <a href="https://docs.python.org/3/">official Python documentation</a
+                        >.
+                </p>
+            </section>
+              
+        </main>
+        <!-- Scroll to Top Button -->
+        <button id="scrollToTopBtn" title="Go to top">↑ Back to Top</button>
+        <!-- JavaScript for Smooth Scroll -->
+        <script>
+            // Get the button
+            const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+            
+            // Show the button when scrolling down
+            window.onscroll = function () {
+              if (
+                document.body.scrollTop > 300 ||
+                document.documentElement.scrollTop > 300
+              ) {
+                scrollToTopBtn.style.display = "block";
+              } else {
+                scrollToTopBtn.style.display = "none";
+              }
+            };
+            
+            // Scroll to top smoothly when the button is clicked
+            scrollToTopBtn.addEventListener("click", () => {
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            });
+        </script>
+    </body>
+</html>
